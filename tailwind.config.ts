@@ -26,7 +26,8 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					glow: 'hsl(var(--primary-glow))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -52,6 +53,23 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Romantic Love Colors
+				heart: {
+					pink: 'hsl(var(--heart-pink))',
+					red: 'hsl(var(--heart-red))',
+					glow: 'hsl(var(--heart-glow))'
+				},
+				// Universe Theme Colors
+				universe: {
+					ocean: 'hsl(var(--ocean))',
+					stardust: 'hsl(var(--stardust))',
+					forest: 'hsl(var(--forest))',
+					cyber: 'hsl(var(--cyber))',
+					sunset: 'hsl(var(--sunset))',
+					crystal: 'hsl(var(--crystal))',
+					nebula: 'hsl(var(--nebula))',
+					garden: 'hsl(var(--garden))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -62,6 +80,23 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			fontFamily: {
+				'romantic': ['Great Vibes', 'cursive'],
+				'script': ['Dancing Script', 'cursive'],
+				'body': ['Poppins', 'sans-serif']
+			},
+			backgroundImage: {
+				'gradient-love': 'var(--gradient-love)',
+				'gradient-universe': 'var(--gradient-universe)',
+				'gradient-stardust': 'var(--gradient-stardust)',
+				'gradient-portal': 'var(--gradient-portal)'
+			},
+			boxShadow: {
+				'romantic': 'var(--shadow-romantic)',
+				'magical': 'var(--shadow-magical)',
+				'heart-glow': 'var(--glow-heart)',
+				'star-glow': 'var(--glow-star)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +119,54 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				// Romantic Animations
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-20px)' }
+				},
+				'pulse-heart': {
+					'0%, 100%': { transform: 'scale(1)', opacity: '0.8' },
+					'50%': { transform: 'scale(1.1)', opacity: '1' }
+				},
+				'twinkle': {
+					'0%': { opacity: '0.3', transform: 'scale(0.8)' },
+					'100%': { opacity: '1', transform: 'scale(1.2)' }
+				},
+				'gentle-spin': {
+					'from': { transform: 'rotate(0deg)' },
+					'to': { transform: 'rotate(360deg)' }
+				},
+				'portal-spin': {
+					'from': { transform: 'rotate(0deg) scale(1)' },
+					'to': { transform: 'rotate(360deg) scale(1.05)' }
+				},
+				'petal-fall': {
+					'0%': { 
+						transform: 'translateY(-100vh) rotate(0deg)', 
+						opacity: '1' 
+					},
+					'100%': { 
+						transform: 'translateY(100vh) rotate(360deg)', 
+						opacity: '0' 
+					}
+				},
+				'typewriter': {
+					'0%': { width: '0' },
+					'100%': { width: '100%' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				// Romantic Animations
+				'float': 'float 3s ease-in-out infinite',
+				'pulse-heart': 'pulse-heart 1.2s ease-in-out infinite',
+				'twinkle': 'twinkle 2s ease-in-out infinite alternate',
+				'gentle-spin': 'gentle-spin 20s linear infinite',
+				'portal-spin': 'portal-spin 8s linear infinite',
+				'petal-fall': 'petal-fall 8s linear infinite',
+				'typewriter': 'typewriter 3s steps(40) 1s 1 normal both'
 			}
 		}
 	},
