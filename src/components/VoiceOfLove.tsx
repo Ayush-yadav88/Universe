@@ -74,6 +74,54 @@ const VoiceOfLove: React.FC = () => {
   const [glowingHearts, setGlowingHearts] = useState<number[]>([]);
   const [currentMessage, setCurrentMessage] = useState<string>('');
   const audioTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const backgroundMusicRef = useRef<HTMLAudioElement | null>(null);
+
+  React.useEffect(() => {
+    // Create background piano music
+    try {
+      const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
+      
+      const playPianoNote = (frequency: number, startTime: number, duration: number) => {
+        const oscillator = audioContext.createOscillator();
+        const gainNode = audioContext.createGain();
+        
+        oscillator.connect(gainNode);
+        gainNode.connect(audioContext.destination);
+        
+        oscillator.frequency.setValueAtTime(frequency, startTime);
+        oscillator.type = 'sine';
+        
+        gainNode.gain.setValueAtTime(0, startTime);
+        gainNode.gain.linearRampToValueAtTime(0.01, startTime + 0.1);
+        gainNode.gain.exponentialRampToValueAtTime(0.001, startTime + duration);
+        
+        oscillator.start(startTime);
+        oscillator.stop(startTime + duration);
+      };
+
+      // Play soft background melody
+      const startPlaying = () => {
+        const currentTime = audioContext.currentTime;
+        const notes = [261.63, 329.63, 392.00, 523.25]; // C, E, G, C
+        
+        notes.forEach((note, i) => {
+          playPianoNote(note, currentTime + i * 2, 1.8);
+        });
+        
+        setTimeout(startPlaying, 8000); // Repeat every 8 seconds
+      };
+      
+      startPlaying();
+    } catch (error) {
+      console.log('Background music not available');
+    }
+
+    return () => {
+      if (backgroundMusicRef.current) {
+        backgroundMusicRef.current.pause();
+      }
+    };
+  }, []);
 
   const playVoiceNote = (noteId: number) => {
     if (playingNote === noteId) {
@@ -112,29 +160,22 @@ const VoiceOfLove: React.FC = () => {
     try {
       const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
       
-      // Create a warm, voice-like tone
+      // Create soft chime sound instead of drums
       const oscillator = audioContext.createOscillator();
       const gainNode = audioContext.createGain();
-      const filter = audioContext.createBiquadFilter();
       
-      oscillator.connect(filter);
-      filter.connect(gainNode);
+      oscillator.connect(gainNode);
       gainNode.connect(audioContext.destination);
       
-      oscillator.frequency.setValueAtTime(200, audioContext.currentTime);
-      oscillator.frequency.linearRampToValueAtTime(250, audioContext.currentTime + 0.5);
-      oscillator.type = 'sawtooth';
-      
-      filter.type = 'lowpass';
-      filter.frequency.setValueAtTime(800, audioContext.currentTime);
+      oscillator.frequency.setValueAtTime(523.25, audioContext.currentTime); // C5 note
+      oscillator.type = 'sine'; // Soft sine wave
       
       gainNode.gain.setValueAtTime(0, audioContext.currentTime);
-      gainNode.gain.linearRampToValueAtTime(0.05, audioContext.currentTime + 0.1);
-      gainNode.gain.linearRampToValueAtTime(0.05, audioContext.currentTime + 1);
-      gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 2);
+      gainNode.gain.linearRampToValueAtTime(0.02, audioContext.currentTime + 0.1);
+      gainNode.gain.exponentialRampToValueAtTime(0.001, audioContext.currentTime + 1.5);
       
       oscillator.start(audioContext.currentTime);
-      oscillator.stop(audioContext.currentTime + 2);
+      oscillator.stop(audioContext.currentTime + 1.5);
     } catch (error) {
       console.log('Audio context not available');
     }
@@ -257,14 +298,14 @@ const VoiceOfLove: React.FC = () => {
 
         {/* Current Message Display */}
         {currentMessage && (
-          <Card className="mt-12 p-6 bg-heart-pink/10 border-heart-pink/20 shadow-magical animate-in fade-in slide-in-from-bottom-4 duration-500">
-            <div className="flex items-center mb-4">
-              <Volume2 className="w-6 h-6 text-heart-pink mr-3" />
-              <h3 className="text-lg font-script font-semibold text-heart-pink">
+          <Card className="mt-12 p-8 bg-white/95 dark:bg-card/95 border-2 border-heart-pink/30 shadow-magical animate-in fade-in slide-in-from-bottom-4 duration-500 backdrop-blur-sm">
+            <div className="flex items-center mb-6">
+              <Volume2 className="w-6 h-6 text-heart-pink mr-3 animate-pulse" />
+              <h3 className="text-xl font-script font-semibold text-heart-pink">
                 Now Playing...
               </h3>
             </div>
-            <p className="text-foreground leading-relaxed font-script text-lg italic">
+            <p className="text-foreground dark:text-foreground leading-relaxed font-script text-xl italic text-center">
               "{currentMessage}"
             </p>
           </Card>
