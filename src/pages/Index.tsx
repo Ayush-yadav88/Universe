@@ -46,10 +46,6 @@ const Index = () => {
         <h1 className="text-2xl font-romantic text-gradient-love">8U1L</h1>
       </div>
 
-      {/* Central Floating Heart */}
-      <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 pointer-events-auto">
-        <FloatingHeart />
-      </div>
 
       {/* Main Content Sections */}
       <section id="memory-locks" className="min-h-screen flex items-center">
