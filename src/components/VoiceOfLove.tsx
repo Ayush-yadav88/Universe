@@ -85,10 +85,10 @@ const VoiceOfLove: React.FC = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-romantic text-gradient-love mb-4">
-            Voice of Love
+            Voice of Love for Vanshika
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground font-script">
-            Eight whispered promises floating on pink clouds of devotion
+            Eight whispered promises for my beloved Miss Parihar, floating on pink clouds of devotion
           </p>
         </div>
 
