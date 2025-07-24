@@ -60,16 +60,14 @@ export default {
 					glow: 'hsl(var(--heart-glow))'
 				},
 				// Universe Theme Colors
-				universe: {
-					ocean: 'hsl(var(--ocean))',
-					stardust: 'hsl(var(--stardust))',
-					forest: 'hsl(var(--forest))',
-					cyber: 'hsl(var(--cyber))',
-					sunset: 'hsl(var(--sunset))',
-					crystal: 'hsl(var(--crystal))',
-					nebula: 'hsl(var(--nebula))',
-					garden: 'hsl(var(--garden))'
-				},
+				'universe-ocean': 'hsl(var(--ocean))',
+				'universe-stardust': 'hsl(var(--stardust))',
+				'universe-forest': 'hsl(var(--forest))',
+				'universe-cyber': 'hsl(var(--cyber))',
+				'universe-sunset': 'hsl(var(--sunset))',
+				'universe-crystal': 'hsl(var(--crystal))',
+				'universe-nebula': 'hsl(var(--nebula))',
+				'universe-garden': 'hsl(var(--garden))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
