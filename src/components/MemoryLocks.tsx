@@ -12,50 +12,50 @@ interface Memory {
 const memories: Memory[] = [
   {
     year: 1,
-    universe: "Ocean Universe",
-    memory: "We first met in the depths of the crystal ocean, where bioluminescent creatures danced around us as we discovered love in the underwater gardens.",
+    universe: "Universe of Serendipity",
+    memory: "In the randomness of life, our souls aligned. Under a sky of soft surprises, we had deep talks that stitched our hearts closer than ever.",
     color: "text-universe-ocean"
   },
   {
     year: 2,
-    universe: "Stardust Universe", 
-    memory: "Among the swirling galaxies, we danced on cosmic winds while purple nebulae painted our love story across the infinite sky.",
+    universe: "Urban Wanderlust Universe", 
+    memory: "Our first college bunk became a cosmic escape. As we wandered the city streets, time slowed to let us fall into each other’s world.",
     color: "text-universe-stardust"
   },
   {
     year: 3,
-    universe: "Enchanted Forest",
-    memory: "Under the ancient Tree of Eternity, fireflies carried our whispered promises through the magical woodland air.",
+    universe: "Heartfall Galaxy",
+    memory: "Like leaves drifting into autumn love, I found myself falling deeper with every smile of yours, in a galaxy ruled by your gravity..",
     color: "text-universe-forest"
   },
   {
     year: 4,
-    universe: "Cyber Love",
-    memory: "In the neon-lit future city, our digital hearts synchronized, creating holographic love letters that floated through the electric night.",
+    universe: "Screenlight Universe",
+    memory: "In the glow of our online movie nights, your laughter lit up the screen, and our hearts synced like dual frames in a timeless reel.",
     color: "text-universe-cyber"
   },
   {
     year: 5,
-    universe: "Golden Sunset",
-    memory: "We pledged our hearts as twin suns set over crystalline mountains, painting the sky in shades of our eternal love.",
+    universe: "Templelight Dimension",
+    memory: "Surrounded by chants and bells, we stood together in divine silence — your hand in mine felt more sacred than the prayers I whispered.",
     color: "text-universe-sunset"
   },
   {
     year: 6,
-    universe: "Crystal Realm",
-    memory: "Walking through caves of singing crystals, each step harmonized with the melody of our beating hearts in perfect unity.",
+    universe: "Storm & Calm Universe",
+    memory: "Through storms of misunderstanding, our hearts still chose each other. Even in fights, I searched for your warmth in every pause.",
     color: "text-universe-crystal"
   },
   {
     year: 7,
-    universe: "Nebula Dreams",
-    memory: "Floating through deep space clouds, we weaved constellations with our intertwined fingers, writing our names in starlight.",
+    universe: "Forever Hourglass",
+    memory: "What a time it was — every second dripped with your love. If I could freeze moments, I’d live in each glance you gave me forever",
     color: "text-universe-nebula"
   },
   {
     year: 8,
-    universe: "Secret Garden",
-    memory: "In this final universe, surrounded by blooming eternal roses, we realized that in every reality, in every timeline, we choose each other.",
+    universe: "Magnetic Souls Realm",
+    memory: "With each day, I grew more drawn to you — addicted to your presence, your energy, your love, like a star pulled to its moon.",
     color: "text-universe-garden"
   }
 ];

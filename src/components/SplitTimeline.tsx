@@ -12,53 +12,54 @@ interface TimelineEvent {
 const timelineEvents: TimelineEvent[] = [
   {
     year: 1,
-    withYou: "Finding you in the ocean depths, our souls recognizing each other instantly among the coral gardens.",
-    withoutYou: "Swimming alone through empty waters, searching for something I couldn't name.",
+    withYou: "We met when life was simple — random deep talks, stolen glances, and that magical moment I realized, 'It’s you.'",
+    withoutYou: "I kept talking, but nothing ever felt deep enough. Every smile felt a little incomplete.",
     color: "text-universe-ocean"
   },
   {
     year: 2,
-    withYou: "Dancing together in cosmic winds, our laughter creating new constellations in the purple nebulae.",
-    withoutYou: "Drifting aimlessly through space, counting distant stars but feeling utterly alone.",
+    withYou: "Our first college bunk — just us, the city, and time moving slower when we were together.",
+    withoutYou: "The day passed like any other, but without laughter echoing beside me, it meant nothing.",
     color: "text-universe-stardust"
   },
   {
     year: 3,
-    withYou: "Sharing whispered promises under the Tree of Eternity, fireflies carrying our love through the magical forest.",
-    withoutYou: "Walking through dark woods, the fireflies' light feeling cold without someone to share the wonder.",
+    withYou: "Every day I fell harder — in your smile, your chaos, your calm. I fell in love beyond just words.",
+    withoutYou: "Even the best days felt half-lived — like something beautiful was missing, and I knew it was you.",
     color: "text-universe-forest"
   },
   {
     year: 4,
-    withYou: "Our digital hearts synchronizing in the neon city, creating holographic love letters that painted the night sky.",
-    withoutYou: "Standing alone on rain-soaked streets, neon lights reflecting my tears instead of joy.",
+    withYou: "Our first movie date — not in a theatre, but online, in sync. Different screens, same emotions.",
+    withoutYou: "Movies played, scenes rolled, but they didn’t hit the same without your hand to hold, even virtually.",
     color: "text-universe-cyber"
   },
   {
     year: 5,
-    withYou: "Pledging our hearts as twin suns set over crystalline mountains, our love painting the sky in infinite colors.",
-    withoutYou: "Watching sunsets alone, beautiful but incomplete, like a song missing its harmony.",
+    withYou: "We stood together in front of a temple — no big words, just silent prayers that included each other.",
+    withoutYou: "Even faith felt quieter when I prayed alone. The silence was louder without your presence.",
     color: "text-universe-sunset"
   },
   {
     year: 6,
-    withYou: "Walking hand in hand through caves of singing crystals, each step harmonizing with our unified heartbeat.",
-    withoutYou: "Hearing the crystals' lonely song echo my solitude, amplifying the emptiness in my chest.",
+    withYou: "We fought. We cried. But love stayed. And that’s what mattered — learning each other through the storms.",
+    withoutYou: "Even peace felt hollow. No fight meant no care, no effort, no you. Just… silence.",
     color: "text-universe-crystal"
   },
   {
     year: 7,
-    withYou: "Floating through deep space clouds, weaving constellations with our intertwined fingers and writing our names in starlight.",
-    withoutYou: "Lost in the cosmic void, reaching for stars that seemed to pull away with each attempt.",
+    withYou: "Those days? Pure magic. Every second felt like a heartbeat in love. Every moment was 'us'.",
+    withoutYou: "I lived, sure. But it wasn’t love. It was just passing time without the warmth of your presence.",
     color: "text-universe-nebula"
   },
   {
     year: 8,
-    withYou: "In the secret garden of eternal roses, realizing that in every reality, in every timeline, we choose each other.",
-    withoutYou: "Standing at the garden's edge, unable to enter, watching the roses bloom for someone else's love story.",
+    withYou: "Now I’m just addicted to you — your voice, your texts, your everything. It’s love, deep and real.",
+    withoutYou: "Everything feels muted. I scroll, I smile — but nothing hits like a message from you used to.",
     color: "text-universe-garden"
   }
 ];
+
 
 const SplitTimeline: React.FC = () => {
   const [visibleEvents, setVisibleEvents] = useState<number[]>([]);
@@ -208,7 +209,7 @@ const SplitTimeline: React.FC = () => {
                     No matter how many universes try to separate us, no matter how many timelines split apart, 
                     our souls are quantum entangled across all realities. In every possible world, 
                     love guides us back to each other. This is our constant, our universal truth, 
-                    our infinite promise.
+                    our infinite promise. I Love You Miss Parihar ❣️.
                   </p>
                   
                   {/* Floating hearts */}

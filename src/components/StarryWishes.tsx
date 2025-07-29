@@ -11,45 +11,46 @@ interface Wish {
 const wishes: Wish[] = [
   {
     id: 1,
-    wish: "I wish to dance with you under every constellation in existence, creating new stars with every twirl.",
+    wish: "I wish for a love so pure that no space exists for the unwanted, only the needed – only you.",
     dreamColor: "text-universe-stardust"
   },
   {
     id: 2,
-    wish: "May our love echo through all eight universes, inspiring other souls to find their eternal connection.",
+    wish: "I wish for a bond where we never fight, just understand, grow, and cherish every moment together.",
     dreamColor: "text-heart-pink"
   },
   {
     id: 3,
-    wish: "I dream of a universe where time stands still, and every moment with you lasts an eternity.",
+    wish: "I dream of holding your hand through every situation — rain or shine, storm or calm — forever.",
     dreamColor: "text-accent"
   },
   {
     id: 4,
-    wish: "Together, let's paint galaxies with our laughter and fill black holes with our endless love.",
+    wish: "I wish to hold you tight in every hug, as if the world pauses to feel the warmth we share.",
     dreamColor: "text-universe-crystal"
   },
   {
     id: 5,
-    wish: "I wish for our hearts to beat in perfect synchrony across all realities, creating the rhythm of the cosmos.",
+    wish: "I dream of watching your success bloom, standing proudly beside you, clapping louder than the world.",
     dreamColor: "text-universe-sunset"
   },
   {
     id: 6,
-    wish: "May we always find each other, no matter how many universes try to keep us apart.",
+    wish: "I wish to love you madly — in silence and in storms, in laughter and in tears — endlessly.",
     dreamColor: "text-universe-forest"
   },
   {
     id: 7,
-    wish: "I dream that our love story becomes the legend whispered by shooting stars to lonely hearts.",
+    wish: "I promise to care for you forever, in all your moods and moments, like a vow written in stars.",
     dreamColor: "text-universe-cyber"
   },
   {
     id: 8,
-    wish: "In every universe, in every timeline, in every reality - I choose you, again and again, forever.",
+    wish: "I wish to marry you in every life, in every timeline, making our forever truly eternal.",
     dreamColor: "text-heart-red"
   }
 ];
+
 
 const StarryWishes: React.FC = () => {
   const [revealedWishes, setRevealedWishes] = useState<number[]>([]);

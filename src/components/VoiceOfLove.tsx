@@ -16,58 +16,59 @@ const voiceNotes: VoiceNote[] = [
     title: "First Hello",
     duration: "0:15",
     color: "text-universe-ocean",
-    message: "Hey beautiful... I just wanted to tell you that seeing you for the first time felt like coming home to a place I'd never been but had dreamed of my entire life."
+    message: "Hey my beautiful girl... That very first hello from you felt like sunshine on my heart. I didn’t just meet you — I finally found where I belong."
   },
   {
     id: 2,
     title: "Cosmic Dance",
     duration: "0:22",
     color: "text-universe-stardust",
-    message: "When we danced among the stars, I swear I heard the universe singing our song. Your laugh harmonized with the cosmic symphony, and I knew we were meant to be."
+    message: "Do you remember that moment? When our laughs felt like music and the stars became our spotlight? Dancing with you, even in imagination, felt like magic written just for us."
   },
   {
     id: 3,
     title: "Forest Whispers",
     duration: "0:18",
     color: "text-universe-forest",
-    message: "Under that magical tree, with fireflies carrying our secrets, I promised you forever. And I meant every glowing word that floated through the enchanted air."
+    message: "Under that dreamy tree, when fireflies lit up the sky, I wanted to pause time and tell you – you’re my safe place, my forever, my softness in this wild world."
   },
   {
     id: 4,
     title: "Digital Hearts",
     duration: "0:25",
     color: "text-universe-cyber",
-    message: "Even in a world of circuits and code, nothing could replicate what we have. Our love is the most advanced technology - it connects souls across any distance, any reality."
+    message: "Even in the digital world, your love feels more real than anything. Every ping, every call, every emoji — it’s you. And that's always enough to make my heart full."
   },
   {
     id: 5,
     title: "Golden Promise",
     duration: "0:20",
     color: "text-universe-sunset",
-    message: "As those twin suns set, painting the sky in impossible colors, I made you a promise: in every sunset, in every universe, I will find you and love you all over again."
+    message: "That sunset felt like a promise — soft, golden, forever. I looked at the sky and whispered to myself... 'No matter the lifetime, it’ll always be her.'"
   },
   {
     id: 6,
     title: "Crystal Symphony",
     duration: "0:17",
     color: "text-universe-crystal",
-    message: "Those singing crystals weren't just making music - they were celebrating us. Every note was a blessing, every harmony was the earth itself approving of our love."
+    message: "The crystals may have sung, but nothing’s as beautiful as the way your voice calms me. Every word from you feels like a little melody made just for my soul."
   },
   {
     id: 7,
     title: "Nebula Dreams",
     duration: "0:24",
     color: "text-universe-nebula",
-    message: "Floating through space clouds, writing our names in starlight... that's when I realized we don't just exist in the universe - we ARE the universe expressing love through human form."
+    message: "When we’re lost in our little world, it's like floating in a dream. Just you and me, wrapped in stars, and nothing else matters — just this, just us."
   },
   {
     id: 8,
     title: "Eternal Garden",
     duration: "0:30",
     color: "text-universe-garden",
-    message: "Here in this secret garden, surrounded by roses that bloom eternal, I understand the truth: we are inevitable. In every reality, across every timeline, we choose each other. Always."
+    message: "In this little secret garden of ours, I want to keep choosing you, over and over again. You are not just a part of my story — you’re the reason I believe in forever."
   }
 ];
+
 
 const VoiceOfLove: React.FC = () => {
   const [selectedNote, setSelectedNote] = useState<number | null>(null);
